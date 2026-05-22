@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Heart } from "lucide-react";
+import CoffeeBeans from "@/components/CoffeeBeans";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,28 +13,28 @@ const stories = [
     role: "Vendedor de galletas",
     story:
       "Vendía galletas en el túnel de Manizales. Compramos todo su inventario y le gestionamos atención dental. Hoy avanzamos hacia conseguirle trabajo estable.",
-    color: "#7C3AED",
+    color: "#F5A41C",
   },
   {
     name: "Edilberto",
     role: "Emprendedor — No Pare Sigue Sigue",
     story:
       "Panadero profesional que montó su propio café. Le dimos visibilidad a sus productos tradicionales y su historia llegó a miles.",
-    color: "#F59E0B",
+    color: "#72B82C",
   },
   {
     name: "Leidy & Kliss",
     role: "Emprendedoras venezolanas — Chikiluki",
     story:
       "Profesionales venezolanas vendiendo café puerta a puerta. Compramos grandes cantidades y hoy promocionamos su sueño de tener un café propio.",
-    color: "#10B981",
+    color: "#1D3A6E",
   },
   {
     name: "Fundación Estoy Contigo",
     role: "Rescate de gatos callejeros",
     story:
       "Con Mishis Planet, proveemos alimento y visibilidad para gatos en situación de calle. La comunidad crece y cada post salva vidas.",
-    color: "#EC4899",
+    color: "#2E6BC7",
   },
 ];
 
@@ -66,11 +67,15 @@ export default function SocialImpact() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0A0A0F] bg-[#FAFAF9] relative overflow-hidden">
-      {/* Background text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <span className="font-display text-[20vw] dark:text-white/[0.02] text-black/[0.02] leading-none">
-          SOCIAL
+    <section ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#040E0A] bg-[#F2FAF5] relative overflow-hidden">
+      <CoffeeBeans variant="left" />
+      {/* Background phrase — vertical left side */}
+      <div className="absolute inset-0 flex items-center justify-start pl-4 pointer-events-none select-none overflow-hidden">
+        <span
+          className="font-display text-[7vw] dark:text-white/[0.025] text-black/[0.03] leading-none"
+          style={{ writingMode: "vertical-rl", textOrientation: "mixed", transform: "rotate(180deg)" }}
+        >
+          ORGULLO QUE NOS UNE
         </span>
       </div>
 

@@ -12,28 +12,28 @@ const services = [
     name: "Potenciamiento",
     desc: "Creamos y administramos tus redes sociales desde cero. Posicionamiento de marca y aumento de ventas para empresas que quieren dar el salto digital.",
     tag: "Para negocios nuevos en digital",
-    color: "#7C3AED",
+    color: "#1D3A6E",
   },
   {
     icon: MessageSquare,
     name: "Asesoría",
     desc: "Consultoría estratégica para empresas con presencia digital estancada. Te mostramos exactamente qué cambiar y cómo crecer.",
     tag: "Para canales que no crecen",
-    color: "#F59E0B",
+    color: "#F5A41C",
   },
   {
     icon: BarChart2,
     name: "Análisis",
     desc: "Evaluación detallada de tus canales actuales. Identificamos problemas, oportunidades y el camino claro hacia el siguiente nivel.",
     tag: "Para tomar decisiones con datos",
-    color: "#10B981",
+    color: "#72B82C",
   },
   {
     icon: Heart,
     name: "Humanización",
     desc: "Mostramos la cara humana de tu empresa. Contenido que genera conexión real, confianza y fidelidad en tu comunidad digital.",
     tag: "Para marcas con alma",
-    color: "#EC4899",
+    color: "#E87C1E",
   },
 ];
 
@@ -66,7 +66,16 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="servicios" ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0D0B14] bg-white">
+    <section id="servicios" ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#060C18] bg-[#F5F8FF] relative overflow-hidden">
+      {/* Background phrase — diagonal bottom-right */}
+      <div className="absolute inset-0 flex items-end justify-end pointer-events-none select-none overflow-hidden pb-8 pr-4">
+        <span
+          className="font-display text-[10vw] dark:text-white/[0.025] text-[#1D3A6E]/[0.04] leading-none whitespace-nowrap"
+          style={{ transform: "rotate(8deg) translateX(5%)" }}
+        >
+          YO COMPRO LO NUESTRO
+        </span>
+      </div>
       <div className="max-w-6xl mx-auto">
         <div ref={headingRef} className="text-center mb-16">
           <p className="text-sm font-semibold tracking-widest uppercase text-primary dark:text-primary-light mb-4">

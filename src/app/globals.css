@@ -3,32 +3,34 @@
 @variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-primary: #7C3AED;
-  --color-primary-light: #A78BFA;
-  --color-accent: #F59E0B;
-  --color-accent-light: #FCD34D;
-  --color-surface: #F5F3FF;
-  --color-surface-dark: #0D0B14;
+  --color-primary: #1D3A6E;
+  --color-primary-light: #4A85D9;
+  --color-accent: #F5A41C;
+  --color-accent-light: #FFB84D;
+  --color-green: #72B82C;
+  --color-green-light: #8FCC44;
+  --color-surface: #EEF4FF;
+  --color-surface-dark: #060C18;
   --color-card: #FFFFFF;
-  --color-card-dark: #13111E;
+  --color-card-dark: #0C1728;
   --font-display: var(--font-anton);
   --font-sans: var(--font-epilogue);
 }
 
 :root {
-  --bg: #FAFAF9;
-  --fg: #1A1A2E;
+  --bg: #F5F8FF;
+  --fg: #0D1E3A;
   --card: #FFFFFF;
-  --border: #E5E0FF;
-  --muted: #6B7280;
+  --border: #C0D4EE;
+  --muted: #5A7499;
 }
 
 .dark {
-  --bg: #0A0A0F;
-  --fg: #F1F5F9;
-  --card: #13111E;
-  --border: #2D2A3E;
-  --muted: #94A3B8;
+  --bg: #060C18;
+  --fg: #E8F0FB;
+  --card: #0C1728;
+  --border: #1D3A6E44;
+  --muted: #7A9AB8;
 }
 
 * {
@@ -45,7 +47,6 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Curtain reveal animation */
 .reveal-clip {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
@@ -53,22 +54,20 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #7C3AED 0%, #F59E0B 100%);
+  background: linear-gradient(135deg, #1D3A6E 0%, #F5A41C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-light {
-  background: linear-gradient(135deg, #A78BFA 0%, #FCD34D 100%);
+  background: linear-gradient(135deg, #4A85D9 0%, #FFB84D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Noise texture overlay */
 .noise::after {
   content: '';
   position: absolute;
@@ -78,10 +77,8 @@ body {
   z-index: 1;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #7C3AED; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #1D3A6E; border-radius: 3px; }
 
-/* Selection */
-::selection { background: #7C3AED33; color: #7C3AED; }
+::selection { background: #1D3A6E33; color: #1D3A6E; }

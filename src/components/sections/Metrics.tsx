@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CoffeeBeans from "@/components/CoffeeBeans";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +66,7 @@ function Counter({ value, suffix, label, description }: typeof stats[0]) {
       className="group relative p-8 rounded-2xl dark:bg-[#13111E] bg-white border dark:border-[#2D2A3E] border-gray-100 hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
     >
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-        style={{ background: "radial-gradient(circle at 50% 0%, rgba(124,58,237,0.08) 0%, transparent 60%)" }}
+        style={{ background: "radial-gradient(circle at 50% 0%, rgba(245,164,28,0.1) 0%, transparent 60%)" }}
       />
       <div className="font-display text-5xl sm:text-6xl dark:text-white text-[#1A1A2E] mb-2">
         <span ref={numRef}>0</span>
@@ -99,8 +100,18 @@ export default function Metrics() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0A0A0F] bg-[#FAFAF9]">
-      <div className="max-w-6xl mx-auto">
+    <section ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0B1626] bg-[#FFFBF2] relative overflow-hidden">
+      <CoffeeBeans variant="right" />
+      {/* Background phrase — diagonal */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+        <span
+          className="font-display text-[14vw] dark:text-white/[0.025] text-[#1D3A6E]/[0.04] leading-none whitespace-nowrap"
+          style={{ transform: "rotate(-10deg)" }}
+        >
+          #DESCUBREAMANIZALES
+        </span>
+      </div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <div ref={headingRef} className="text-center mb-16">
           <p className="text-sm font-semibold tracking-widest uppercase text-primary dark:text-primary-light mb-4">
             Nuestro impacto
@@ -120,3 +131,4 @@ export default function Metrics() {
     </section>
   );
 }
+
