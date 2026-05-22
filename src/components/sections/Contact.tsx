@@ -28,14 +28,14 @@ export default function Contact() {
     <section
       id="contacto"
       ref={sectionRef}
-      className="py-24 px-4 sm:px-6 relative overflow-hidden dark:bg-[#0A0A0F] bg-[#FAFAF9]"
+      className="py-24 px-4 sm:px-6 relative overflow-hidden dark:bg-[#0B1626] bg-[#FFFBF2]"
     >
       {/* Background */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 100%, rgba(124,58,237,0.15) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 50% 100%, rgba(29,58,110,0.2) 0%, transparent 60%)",
         }}
       />
 

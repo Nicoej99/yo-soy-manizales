@@ -49,7 +49,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section id="impacto" ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0D0B14] bg-white overflow-hidden">
+    <section id="impacto" ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#060C18] bg-[#F5F8FF] overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div ref={headingRef} className="text-center mb-16">
           <p className="text-sm font-semibold tracking-widest uppercase text-primary dark:text-primary-light mb-4">
@@ -88,7 +88,7 @@ export default function Portfolio() {
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: "radial-gradient(ellipse at 50% 0%, rgba(124,58,237,0.12) 0%, transparent 60%)",
+              background: "radial-gradient(ellipse at 50% 0%, rgba(245,164,28,0.12) 0%, transparent 60%)",
             }}
           />
           <p className="font-display text-2xl sm:text-3xl dark:text-white text-[#1A1A2E] mb-4 relative z-10">

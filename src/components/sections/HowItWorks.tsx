@@ -62,8 +62,8 @@ export default function HowItWorks() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0A0A0F] bg-[#FAFAF9]">
-      <div className="max-w-5xl mx-auto">
+    <section ref={sectionRef} className="py-24 px-4 sm:px-6 dark:bg-[#0B1626] bg-[#FFFBF2] relative overflow-hidden">
+      <div className="max-w-5xl mx-auto relative z-10">
         <div ref={headingRef} className="text-center mb-16">
           <p className="text-sm font-semibold tracking-widest uppercase text-primary dark:text-primary-light mb-4">
             El proceso
@@ -106,3 +106,4 @@ export default function HowItWorks() {
     </section>
   );
 }
+
